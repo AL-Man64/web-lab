@@ -1,0 +1,9 @@
+body {
+  grid-template-areas: "head head" "greet greet" "side main";
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas: "head head" "side greet" "side main";
+  }
+}
