@@ -1,5 +1,5 @@
-import express from "express";
-import { join } from "path";
+const express = require("express");
+const path = require("path");
 
 // create app
 
@@ -10,12 +10,12 @@ const port = 3000;
 
 app.engine(".ejs", require("ejs").__express);
 
-app.set("views", join(__dirname, "views"));
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 // setup static
 
-app.use(express.static(join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // setup routes
 
