@@ -1,0 +1,9 @@
+body {
+  grid-template-areas: "head head" "cart cart" "cart cart";
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-areas: "head head" "cart cart" "cart cart";
+  }
+}

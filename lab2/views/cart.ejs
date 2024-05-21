@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" />
+    <title>The Fog Man</title>
+    <link href="styles/cart.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body id="container" class="container">
+    <header id="header" class="header">
+      <a href="index.html"
+        ><img
+          src="images/logo.png"
+          alt="LOGOTIP"
+          id="logo"
+          height="128"
+          class="logo"
+      /></a>
+      <div id="current-category" class="current-category">
+        <p class="current-category-text"></p>
+      </div>
+      <div id="top-right" class="top-right">
+        <div class="cart-container">
+          <span id="total-amt" class="total-amt">0</span>
+          <a href="cart.html" id="cart-link" class="cart-link">
+            <img src="images/cart.png" alt="CART" height="32" />
+          </a>
+        </div>
+        <img src="" alt="SEARCH" />
+      </div>
+    </header>
+    <main id="cart" class="cart">
+      <section id="items" class="items">
+        <div id="items-key" class="items-key item">
+          <p>Name</p>
+          <p>Amount</p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="scripts/cart.js" async></script>
+  </body>
+</html>

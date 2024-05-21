@@ -1,0 +1,24 @@
+{
+  "name": "the-fog-man",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AL-Man64/web-lab.git"
+  },
+  "author": "Anton Ladan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AL-Man64/web-lab/issues"
+  },
+  "homepage": "https://github.com/AL-Man64/web-lab#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
