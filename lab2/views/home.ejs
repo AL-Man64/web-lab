@@ -9,38 +9,21 @@
     <link href="styles/style.css" rel="stylesheet" />
   </head>
   <body id="container" class="container">
-    <header id="header" class="header">
-      <a href="/"
-        ><img
-          src="images/logo.png"
-          alt="LOGOTIP"
-          id="logo"
-          height="128"
-          class="logo"
-      /></a>
-      <div id="current-category" class="current-category">
-        <p class="current-category-text"></p>
-      </div>
-      <div id="top-right" class="top-right">
-        <div class="cart-container">
-          <span id="total-amt" class="total-amt">0</span>
-          <a href="cart.html" id="cart-link" class="cart-link">
-            <img src="images/cart.png" alt="CART" height="32" />
-          </a>
-        </div>
-        <img src="images/search.png" alt="SEARCH" height="32" />
-      </div>
-    </header>
+    <%- include('partials/header'); %>
     <section id="greet" class="greet">
       <img src="" alt="GREET IMAGE" id="greet-image" class="greet-image" />
       <p id="greeting" class="greeting">
-        Welcome, to my fog store. Be sure to expect very offensive jokes, and
+        Welcome to my fog store. Be sure to expect very offensive jokes, and
         enjoy your stay.
       </p>
     </section>
     <aside id="sidebar" class="sidebar">
       <nav id="categories" class="categories">
-        <ul></ul>
+        <ul>
+          <% for (const cat of categories) { %>
+          <li id="category-<%= cat.id %>" class="category"><%= cat.name %></li>
+          <% } %>
+        </ul>
       </nav>
       <section id="actions" class="actions">
         <a href="#">Kontakt</a>
@@ -53,6 +36,6 @@
     <main id="content" class="content">
       <section id="products" class="products"></section>
     </main>
-    <script type="module" src="scripts/main.js" async></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
